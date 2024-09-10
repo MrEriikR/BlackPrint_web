@@ -1,0 +1,414 @@
+
+
+/* GLOBAL ----------------------------------------------------------------*/
+
+@font-face {
+    font-family: "BaiJamjuree-Bold";
+    src: url(../assets/fonts/BaiJamjuree-Bold.ttf);
+}
+
+@font-face {
+    font-family: "BaiJammjuree-Regular";
+    src: url(../assets/fonts/BaiJamjuree-Regular.ttf);
+}
+
+@font-face {
+    font-family: "BaiJammjuree-Light";
+    src: url(../assets/fonts/BaiJamjuree-Light.ttf);
+}
+
+body {
+    min-height: 100%;
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+    color: black;
+    font-family: "BaiJammjuree-Regular";
+    background-color: white;
+    overflow-x: hidden;
+}
+
+:root {
+    --main: var(#F67599);
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+span {
+    display: inline-block;
+}
+
+#index section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content {
+    max-width: 1200px;
+}
+
+.gradient-sections {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.725);
+    /* background: linear-gradient(transparent, black); */
+}
+
+.text-sections {
+    width: 70%;
+    position: absolute;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    max-width: 1200px;
+    font-size: 18px;
+    line-height: 30px;
+    letter-spacing: 1px;
+    /* background-color: teal; */
+    text-align: center;
+}
+
+.overlay {
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    background-color: rgb(19, 21, 28);
+    opacity: 0.8;
+    position: absolute;
+}
+
+.gradient {
+    width: 100%;
+    height: 50%;
+    position: absolute;
+    top: 0;
+    z-index: 2;
+    background: linear-gradient(rgb(13, 13, 14), transparent);
+}
+
+.page-title {
+    width: 90%;
+    height: 90%;
+    position: absolute;
+    z-index: 9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    max-width: 1200px;
+    text-align: center;
+    letter-spacing: 10px;
+}
+
+.btn {
+    /* min-height: calc(70px + 20px); */
+    padding: 8px 40px 8px 40px;
+    background-color: transparent;
+    color: #F67599;
+    text-decoration: none;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    transition: 0.3s;
+    border: #F67599 1px solid;
+    border-radius: 50px;
+    font-family: "BaiJamjuree-Regular";
+}
+
+.btn:hover {
+    background-color: #F67599;
+    color: black;
+}
+
+.section-heading {
+    font-size: 60px;
+    letter-spacing: 5px;
+    line-height: 70px;
+    font-family: "BaiJamjuree-Bold";
+}
+
+.subtitle {
+    font-family: "BaiJammjuree-Light";
+    font-size: 25px;
+    margin-bottom: 40px;
+}
+
+p {
+    margin-block-start: 10px;
+    margin-block-end: 10px;
+}
+
+.loading-screen {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    color: black;
+    font-size: 20px;
+    font-family: "BaiJamjuree-Bold";
+}
+
+.loading-screen.hide {
+    opacity: 0;
+    transition: opacity 1s ease-out;
+}
+
+.loading-screen.hide {
+    display: none;
+}
+
+
+/* HEADER / NAV -------------------------------------------------------------------- */
+
+.main-wrapper {
+    min-height: calc(100% - 90px);
+    width: 100%;
+    background-color: white;
+}
+
+header {
+    position: absolute;
+    top: 0;
+    z-index: 10;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+header a {
+    color: white;
+}
+
+.banner {
+    width: 100%;
+    min-height: calc(70px + 20px);
+    background-color: transparent;
+    /* border-bottom: 1px solid rgb(192, 192, 192); */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    top: 0;
+    /* max-width: 1200px; */
+}
+
+a.logo img {
+    height: 40px;
+    margin-left:80px;
+}
+
+nav {
+    min-height: calc(70px + 20px);
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    /* background-color: teal; */
+    margin-right: 40px;
+}
+
+.site-nav-links {
+    height: 100%;
+}
+
+.site-nav-link {
+    margin-right: 40px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.site-nav-link:hover {
+    border-bottom: 1px solid white;
+}
+
+/* SECTIONS ----------------------------------------------------------- */
+
+.main-section {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    color: white;
+}
+
+.index-section {
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    flex-direction: column;
+    display: flex;
+    height: 100vh;
+    width: 100%;
+}
+
+/* SECTION BACKGROUNDS */
+
+.main-section {
+    background-image: url(../assets/images/main_back.webp);
+}
+
+.smart-city-section {
+    background-image: url(../assets/images/edificios_3.jpg);
+}
+
+.smart-people-section {
+    background-image: url(../assets/images/edificios.jpg);
+}
+
+
+/* SCROLL ICON */
+
+.scroll-for-more {
+    width: 200px;
+    height: 130px;
+    position: absolute;
+    bottom: 0px;
+    /* background-color: teal; */
+    z-index: 999;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.scroll-for-more p {
+    font-size: 15px;
+}
+
+.arrow {
+    width: 30%;
+}
+
+
+/* MOBILE MENU --------------------------------------------------- */
+
+.mobile-menu {
+    position: fixed;
+    top: 0;
+    z-index: 11;
+    right: -400px;
+    width: 60%;
+    height: 100vh;
+    background-color: white;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    color: black;
+    font-family: "D-DIN";
+}
+
+.close-mobile-menu {
+    position: absolute;
+    left: 5px;
+    top: 10px;
+    width: 35px;
+}
+
+.mobile-menu-btn {
+    display: none;
+    width: 35px;
+    margin-right: 40px;
+}
+
+.nav-links-mobile {
+    width: 90%;
+    position: absolute;
+    top: 70px;
+    min-height: calc(100% - 90px);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.mobile-link {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+
+/* MEDIA QUERIES ------------------------------------------------ */
+
+
+/* @media (max-width: 600px) {
+
+    .mobile-menu-btn {
+        display: block;
+    }
+
+    .mobile-menu {
+        display: flex;
+    }
+
+    a.logo img {
+        height: 40px;
+        margin-left: 24px;
+    }
+
+    .desktop-link {
+        display: none;    
+    }
+
+    .text-sections {
+        width: 80%;
+        bottom: 50px;
+        left: 15px;
+        z-index: 8;
+        font-size: 14px;
+    }
+
+    .tecnologia-section {
+        background-position: left;
+    }
+
+    .smart-people-section {
+        background-position: 70%;
+    }
+
+
+    .section-heading {
+        font-size: 30px;
+        letter-spacing: 4px;
+    }
+
+    .btn {
+        padding: 2px 40px;
+        border-radius: 50px;
+        font-size: 10px;
+    }
+
+} */
+
+
