@@ -37,6 +37,10 @@ a {
     color: black;
 }
 
+.align-left {
+    text-align: left;
+}
+
 span {
     display: inline-block;
 }
@@ -157,10 +161,17 @@ main {
     visibility: hidden;
 }
 
+.description {
+    font-size: 26px;
+    margin-bottom: 20px;
+}
+
 p {
     margin-block-start: 10px;
     margin-block-end: 10px;
 }
+
+/* LOADING SCREEN --------------------------------------- */
 
 .loading-screen {
     position: fixed;
@@ -255,7 +266,7 @@ nav {
 
 /* SECTIONS ----------------------------------------------------------- */
 
-.index-section {
+section {
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
@@ -278,6 +289,26 @@ nav {
     color: white;
 }
 
+.platform-text-section {
+    /* background-color: tomato; */
+    width: 90%;
+    flex-direction: row !important;
+    height: 60%;
+    max-width: 2000px;
+}
+
+.platform-text {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.platform-video {
+    width: 45%;
+}
+
 .bottom-gradient {
     position: absolute;
     bottom: 0;
@@ -285,6 +316,8 @@ nav {
     height: 30%;
     background: linear-gradient(transparent, #000700);
 }
+
+
 
 
 /* SECTION BACKGROUNDS */
