@@ -24,7 +24,7 @@ body {
     padding: 0;
     color: black;
     font-family: "BaiJammjuree-Regular";
-    background-color: #595959;
+    background-color: #000700;
     overflow-x: hidden;
 }
 
@@ -168,7 +168,7 @@ p {
     top: 0;
     width: 100%;
     height: 100%;
-    background-color: #595959;
+    background-color: #000700;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -284,11 +284,11 @@ nav {
     background-image: url(../assets/images/main_back.webp);
 }
 
-.smart-city-section {
+.platform-section {
     background-image: url(../assets/images/edificios_3.jpg);
 }
 
-.smart-people-section {
+.we-are-section {
     background-image: url(../assets/images/edificios.jpg);
 }
 
