@@ -193,7 +193,7 @@ p {
 .main-wrapper {
     min-height: calc(100% - 90px);
     width: 100%;
-    background-color: white;
+    /* background-color: white; */
 }
 
 header {
@@ -278,6 +278,13 @@ nav {
     color: white;
 }
 
+.bottom-gradient {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 30%;
+    background: linear-gradient(transparent, #000700);
+}
 
 
 /* SECTION BACKGROUNDS */
@@ -297,9 +304,9 @@ nav {
     background-image: url(../assets/images/main_back.webp);
 } */
 
-.platform-section {
+/* .platform-section {
     background-image: url(../assets/images/edificios_3.jpg);
-}
+} */
 
 .we-are-section {
     background-image: url(../assets/images/edificios.jpg);
