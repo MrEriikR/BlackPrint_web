@@ -294,6 +294,8 @@ section {
     color: white;
 }
 
+/* PLATFORM SECTION */
+
 .platform-text-section {
     /* background-color: tomato; */
     width: 90%;
@@ -308,6 +310,11 @@ section {
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
+    /* background-color: teal; */
+}
+
+.platform-text .section-heading {
+    text-align: left;
 }
 
 .platform-video {
@@ -322,6 +329,14 @@ section {
     background: linear-gradient(transparent, #000700);
 }
 
+.top-gradient {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 30%;
+    background: linear-gradient(#000700, transparent);
+}
+
 .list-el {
     /* background-color: teal; */
     font-family: "BaiJamjuree-Bold";
@@ -332,6 +347,60 @@ section {
     list-style: none;
     font-size: 15px;
 }
+
+/* FEATURES SECTION */
+
+.features-text-section {
+    /* background-color: tomato; */
+    width: 90%;
+    height: 60%;
+    max-width: 2000px;
+}
+
+.features-section .section-heading {
+    margin-bottom: 50px;
+}
+
+.features-squares {
+    width: 60%;
+    height: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* background-color: teal; */
+}
+
+.feature {
+    width: 300px;
+    height: 400px;
+    /* background-color: teal; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.feature_image {
+    width: 300px;
+    height: 300px;
+    /* background-color: pink; */
+    border-radius: 20px;
+    background-position: center;
+    background-size: cover;
+}
+
+.feature_image_1 {
+    background-image: url(../assets/images/edificios.jpg);
+}
+
+.feature_image_2 {
+    background-image: url(../assets/images/city-data.jpg);
+}
+
+.feature_image_3 {
+    background-image: url(../assets/images/futuristic-difusion.webp);
+}
+
 
 
 /* SECTION BACKGROUNDS */
@@ -348,14 +417,14 @@ section {
 
 
 .main-section {
-    background-image: url(../assets/images/latin-america.webp);
+    background-image: url(../assets/images/latam_1.jpg);
 }
 
 /* .platform-section {
     background-image: url(../assets/images/edificios_3.jpg);
 } */
 
-.we-are-section {
+.features-section {
     background-image: url(../assets/images/city-data.jpg);
 }
 

@@ -43,27 +43,31 @@ function scrollOnClick() {
 
 //  MOBILE MENU -------------------------------------------------------------
 
-function mobileMenu() {
-    var openMenuBtn = document.querySelector('.mobile-menu-btn');
-    var closeMenuBtn = document.querySelector('.close-mobile-menu');
-    var mobileLink = document.querySelectorAll('.mobile-link');
+// function mobileMenu() {
+//     var openMenuBtn = document.querySelector('.mobile-menu-btn');
+//     var closeMenuBtn = document.querySelector('.close-mobile-menu');
+//     var mobileLink = document.querySelectorAll('.mobile-link');
 
-    openMenuBtn.addEventListener("click", function(){
-        gsap.to(".mobile-menu", { right: "0px", ease: "power2.out" });
-    });
+//     openMenuBtn.addEventListener("click", function(){
+//         gsap.to(".mobile-menu", { right: "0px", ease: "power2.out" });
+//     });
 
-    closeMenuBtn.addEventListener("click", function(){
-        gsap.to(".mobile-menu", { right: "-400px", ease: "power2.out" });
-    });
+//     closeMenuBtn.addEventListener("click", function(){
+//         gsap.to(".mobile-menu", { right: "-400px", ease: "power2.out" });
+//     });
 
-    mobileLink.forEach(link => {
-        link.addEventListener("click", function(){
-            gsap.to(".mobile-menu", { right: "-400px", ease: "power2.out" });
-        });
-    })
+//     mobileLink.forEach(link => {
+//         link.addEventListener("click", function(){
+//             gsap.to(".mobile-menu", { right: "-400px", ease: "power2.out" });
+//         });
+//     })
 
     
-}
+// }
+
+
+
+// SHOW SUB ELEMENTS IN A LIST ------------------------------------------------------
 
 
 function showSubelement() {

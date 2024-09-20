@@ -24,6 +24,7 @@ introAnim
 
 
 //  MOBILE MENU -------------------------------------------------------------
-mobileMenu();
+// mobileMenu();
 
+// SHOW SUB ELEMENTS IN A LIST ------------------------------------------------------
 showSubelement();
