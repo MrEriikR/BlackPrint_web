@@ -322,7 +322,16 @@ section {
     background: linear-gradient(transparent, #000700);
 }
 
+.list-el {
+    /* background-color: teal; */
+    font-family: "BaiJamjuree-Bold";
+}
 
+.sub-el {
+    visibility: hidden;
+    list-style: none;
+    font-size: 15px;
+}
 
 
 /* SECTION BACKGROUNDS */

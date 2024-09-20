@@ -64,3 +64,20 @@ function mobileMenu() {
 
     
 }
+
+
+function showSubelement() {
+    var list = document.querySelectorAll(".list");
+    list.forEach(el => {
+        el.addEventListener("mouseenter", function(){
+            gsap.to(".sub-el", { autoAlpha: 1 });
+            gsap.to("li", { marginBottom: "10px" });
+        });
+    
+        el.addEventListener("mouseleave", function(){
+            gsap.to(".sub-el", { autoAlpha: 0 });
+            gsap.to("li", { marginBottom: "0px" });
+        });
+    })
+    
+}
