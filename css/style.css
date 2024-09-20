@@ -333,16 +333,16 @@ section {
 }
 
 
-/* .main-section {
-    background-image: url(../assets/images/main_back.webp);
-} */
+.main-section {
+    background-image: url(../assets/images/latin-america.webp);
+}
 
 /* .platform-section {
     background-image: url(../assets/images/edificios_3.jpg);
 } */
 
 .we-are-section {
-    background-image: url(../assets/images/edificios.jpg);
+    background-image: url(../assets/images/city-data.jpg);
 }
 
 
