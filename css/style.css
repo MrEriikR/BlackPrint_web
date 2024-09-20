@@ -37,6 +37,11 @@ a {
     color: black;
 }
 
+ul {
+    margin-inline-start: 0px;
+    padding-inline-start: 20px;
+}
+
 .align-left {
     text-align: left;
 }
@@ -343,6 +348,7 @@ section {
 
 .we-are-section {
     background-image: url(../assets/images/city-data.jpg);
+    background-image: url(../assets/images/city_orange.jpg);
 }
 
 
@@ -367,6 +373,14 @@ section {
 
 .arrow {
     width: 30%;
+}
+
+
+/* FOOTER -------------------------------------------------------- */
+
+footer {
+    width: 100%;
+    height: 50vh;
 }
 
 
