@@ -88,7 +88,7 @@ main {
     color: white;
     max-width: 1200px;
     font-size: 18px;
-    line-height: 30px;
+    /* line-height: 30px; */
     letter-spacing: 1px;
     /* background-color: teal; */
     text-align: center;
@@ -294,7 +294,13 @@ section {
     color: white;
 }
 
+
+
 /* PLATFORM SECTION */
+
+.platform-section {
+    height: 80vh;
+}
 
 .platform-text-section {
     /* background-color: tomato; */
@@ -317,8 +323,9 @@ section {
     text-align: left;
 }
 
-.platform-video {
+.platform-image {
     width: 45%;
+    margin-right: 30px;
 }
 
 .bottom-gradient {
@@ -337,6 +344,10 @@ section {
     background: linear-gradient(#000700, transparent);
 }
 
+.list {
+    font-size: 15px;
+}
+
 .list-el {
     /* background-color: teal; */
     font-family: "BaiJamjuree-Bold";
@@ -345,15 +356,19 @@ section {
 .sub-el {
     visibility: hidden;
     list-style: none;
-    font-size: 15px;
+    font-size: 14px;
 }
 
 /* FEATURES SECTION */
 
+.features-section {
+    height: 70vh !important;
+}
+
 .features-text-section {
     /* background-color: tomato; */
     width: 90%;
-    height: 60%;
+    height: 90%;
     max-width: 2000px;
 }
 
@@ -361,9 +376,14 @@ section {
     margin-bottom: 50px;
 }
 
+.feature-description {
+    font-size: 15px;
+    margin-bottom: 40px;
+}
+
 .features-squares {
-    width: 60%;
-    height: 40%;
+    width: 90%;
+    height: 60%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -381,8 +401,7 @@ section {
 }
 
 .feature_image {
-    width: 300px;
-    height: 300px;
+    width: 265px;
     /* background-color: pink; */
     border-radius: 20px;
     background-position: center;
@@ -418,14 +437,6 @@ section {
 
 .main-section {
     background-image: url(../assets/images/latam_1.jpg);
-}
-
-/* .platform-section {
-    background-image: url(../assets/images/edificios_3.jpg);
-} */
-
-.features-section {
-    background-image: url(../assets/images/city-data.jpg);
 }
 
 
