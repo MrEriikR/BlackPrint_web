@@ -297,7 +297,7 @@ section {
 /* PLATFORM SECTION */
 
 .platform-section {
-    height: 80vh;
+    height: 60vh;
 }
 
 .platform-text-section {
@@ -362,7 +362,6 @@ section {
 .features-section {
     height: 70vh !important;
     justify-content: flex-start !important;
-    /* background-color: teal; */
 }
 
 .features-text-section {
