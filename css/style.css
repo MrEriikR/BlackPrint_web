@@ -126,7 +126,6 @@ main {
 }
 
 .btn {
-    /* min-height: calc(70px + 20px); */
     padding: 8px 40px 8px 40px;
     background-color: transparent;
     color: #F67599;
@@ -134,7 +133,7 @@ main {
     text-align: center;
     display: flex;
     align-items: center;
-    /* transition: 0.3s; */
+    transition: 0.3s;
     border: #F67599 1px solid;
     border-radius: 50px;
     font-family: "BaiJamjuree-Regular";
@@ -429,23 +428,28 @@ section {
     color: black;
 }
 
+.target-heading {
+    margin-bottom: 60px;
+}
+
 .target-container {
     /* background-color: teal; */
-    width: 80%;
-    height: 20%;
+    width: 70%;
+    height: 60%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
 }
 
 .target-btns {
     width: 100%;
-    height: 30%;
+    height: 50px;
     /* background-color: red; */
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin-bottom: 50px;
 }
 
 .sh-btn {
@@ -455,7 +459,7 @@ section {
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 10px;
+    border-radius: 50px;
     border: #000700 1px solid;
     cursor: pointer;
 }
@@ -473,7 +477,70 @@ section {
     margin-right: 10px;
 }
 
+.target-description {
+    width: 100%;
+    height: calc(100% - 60px);
+    /* background-color: tan; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
 
+.target {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    /* background-color: tomato; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.target-text {
+    width: 40%;
+    height: 100%;
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    /* background-color: tan; */
+}
+
+.target-image {
+    width: 40%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-image: url(../assets/images/retilers-image.jpg);
+}
+
+.target-p {
+    text-align: left;
+    margin-bottom: 40px;
+}
+
+.target-btn {
+    padding: 8px 40px 8px 40px;
+    background-color: transparent;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    transition: 0.3s;
+    background-color: #F67599;
+    border: #F67599 1px solid;
+    border-radius: 50px;
+    font-size: 20px;
+    font-family: "BaiJamjuree-Regular";
+}
+
+.target-btn:hover {
+    background-color: transparent;
+    color: #F67599;
+}
 
 /* SECTION BACKGROUNDS */
 
