@@ -18,8 +18,7 @@ window.addEventListener("load", scrollOnClick);
 
 var introAnim = gsap.timeline({paused:true, delay: 0.5})
 introAnim
-.from('.section-heading, .subtitle', 2, { autoAlpha: 0, scale: 0.9, stagger: 0.1}, 'all')
-.from('.demo', 2, { autoAlpha: 0, scale: 0.9}, 'all')
+.from('.main-section .section-heading, .subtitle, .demo', 1, { autoAlpha: 0, scale: 0.9, stagger: 0.1}, 'all')
 
 
 
@@ -28,3 +27,10 @@ introAnim
 
 // SHOW SUB ELEMENTS IN A LIST ------------------------------------------------------
 showSubelement();
+
+
+// SELECT A TARGET ----------------------------------------------------
+selectTarget();
+
+
+animateSectionsOnScroll();
