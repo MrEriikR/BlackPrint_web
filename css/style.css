@@ -22,7 +22,7 @@ body {
     max-width: 100%;
     margin: 0;
     padding: 0;
-    color: black;
+    color: white;
     font-family: "BaiJammjuree-Regular";
     background-color: #000700;
     overflow-x: hidden;
@@ -79,8 +79,6 @@ main {
 
 .text-sections {
     width: 70%;
-    position: absolute;
-    z-index: 10;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -362,14 +360,13 @@ section {
 /* FEATURES SECTION */
 
 .features-section {
-    height: 70vh !important;
+    height: 90vh !important;
 }
 
 .features-text-section {
     /* background-color: tomato; */
     width: 90%;
     height: 90%;
-    max-width: 2000px;
 }
 
 .features-section .section-heading {
@@ -387,17 +384,17 @@ section {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    /* background-color: teal; */
+    max-height: 330px;
 }
 
 .feature {
     width: 300px;
-    height: 400px;
-    /* background-color: teal; */
+    height: 100%;
+    /* background-color: rebeccapurple; */
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
 }
 
 .feature_image {
@@ -418,6 +415,61 @@ section {
 
 .feature_image_3 {
     background-image: url(../assets/images/futuristic-difusion.webp);
+}
+
+
+/* TARGET AUDIENCE SECTION */
+
+.target-audience-section {
+    background-color: white;
+}
+
+.target-audience-section > * {
+    color: black;
+}
+
+.stakeholders-container {
+    /* background-color: teal; */
+    width: 80%;
+    height: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.stakeholders-btns {
+    width: 100%;
+    height: 30%;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.sh-btn {
+    width: 200px;
+    height: 100%;
+    /* background-color: burlywood; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    border: #000700 1px solid;
+    cursor: pointer;
+}
+
+.sh-btn > * {
+    pointer-events: none;
+}
+
+.sh-btn:hover {
+    background-color: rgb(234, 234, 234);
+}
+
+.sh-icon {
+    height: 50%;
+    margin-right: 10px;
 }
 
 
