@@ -360,7 +360,9 @@ section {
 /* FEATURES SECTION */
 
 .features-section {
-    height: 90vh !important;
+    height: 70vh !important;
+    justify-content: flex-start !important;
+    /* background-color: teal; */
 }
 
 .features-text-section {
@@ -428,7 +430,7 @@ section {
     color: black;
 }
 
-.stakeholders-container {
+.target-container {
     /* background-color: teal; */
     width: 80%;
     height: 20%;
@@ -438,7 +440,7 @@ section {
     justify-content: center;
 }
 
-.stakeholders-btns {
+.target-btns {
     width: 100%;
     height: 30%;
     /* background-color: red; */
