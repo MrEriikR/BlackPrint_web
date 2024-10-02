@@ -99,9 +99,8 @@ main {
 .overlay {
     width: 100%;
     height: 100%;
-    z-index: 2;
-    background-color: rgb(19, 21, 28);
-    opacity: 0.8;
+    background-color: rgb(0, 0, 0);
+    opacity: 0.5;
     position: absolute;
 }
 
@@ -295,7 +294,7 @@ section {
 /* PLATFORM SECTION */
 
 .platform-section {
-    height: 60vh;
+    height: 80vh;
 }
 
 .platform-text-section {
@@ -358,14 +357,20 @@ section {
 /* FEATURES SECTION */
 
 .features-section {
-    height: 70vh !important;
+    height: 50vh !important;
+    min-height: 600px;
     justify-content: flex-start !important;
+    background-color: white;
+    background-attachment: fixed;
+    background-image: url("../assets/images/map_1.jpg");
 }
 
 .features-text-section {
     /* background-color: tomato; */
     width: 90%;
     height: 90%;
+    /* color: #000700; */
+    color: white;
 }
 
 .features-section .section-heading {
@@ -397,11 +402,11 @@ section {
 }
 
 .feature_image {
-    width: 265px;
+    width: 250px;
     /* background-color: pink; */
-    border-radius: 20px;
     background-position: center;
-    background-size: cover;
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
 .feature_image_1 {
@@ -504,10 +509,14 @@ section {
     font-size: 34px;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
     /* background-color: tan; */
-    margin-right: 50px;
+    margin-left: 50px;
+}
+
+.target-p {
+    text-align: left;
 }
 
 .target-image {
@@ -519,11 +528,11 @@ section {
 }
 
 .retailer-image {
-    background-image: url(../assets/images/retilers-image.jpg);
+    background-image: url(../assets/images/store.jpg);
 }
 
 .investor-image {
-    background-image: url(../assets/images/investor-image.jpg);
+    background-image: url(../assets/images/investment.jpg);
     background-position: right;
 }
 
