@@ -140,6 +140,16 @@ function animateSectionsOnScroll() {
                     { scale: 0.8, autoAlpha: 0, stagger: 0.1 },
                 );
             }
+        },
+        {
+            id: "#capabilities",
+            animation: function() {
+              
+                gsap.from(
+                    "#capabilities .section-heading",
+                    { scale: 0.8, autoAlpha: 0, stagger: 0.1 },
+                );
+            }
         }
     ];
 
